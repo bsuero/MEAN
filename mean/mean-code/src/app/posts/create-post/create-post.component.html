@@ -1,0 +1,24 @@
+<p>
+    create-post works!
+</p>
+
+<textarea rows="10" [value]="newPost" #postInput>  </textarea>
+<hr>
+<button (click)="onAddPost(postInput)">save post</button>
+<p>{{newPost}}</p>
+
+<hr>
+
+<textarea rows="10" [value]="newPostTwoWayBinding" #postInputTwoWayBinding>  </textarea>
+<hr>
+<button (click)="onAddPostTwoWayBinding(postInputTwoWayBinding)">save post</button>
+<hr>
+<p>{{newPostTwoWayBinding}}</p>
+
+<hr>
+
+<textarea rows="10" [(ngModel)]='enterValue'>  </textarea>
+<hr>
+<button (click)="onAddPostTwoWayBindingFeature()">save post</button>
+<hr>
+<p>{{newPostForEnterValue}}</p>
