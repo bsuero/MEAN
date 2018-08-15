@@ -1,4 +1,4 @@
-<p>
+<!-- <p>
     create-post works!
 </p>
 
@@ -15,10 +15,12 @@
 <hr>
 <p>{{newPostTwoWayBinding}}</p>
 
-<hr>
+<hr> -->
 
-<textarea rows="10" [(ngModel)]='enterValue'>  </textarea>
-<hr>
-<button (click)="onAddPostTwoWayBindingFeature()">save post</button>
-<hr>
-<p>{{newPostForEnterValue}}</p>
+
+<mat-card>
+    <mat-form-field>
+        <textarea matInput rows="10" [(ngModel)]='enterValue'>  </textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="onAddPostTwoWayBindingFeature()">save post</button>
+</mat-card>
